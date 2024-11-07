@@ -1,0 +1,35 @@
+@use "./colors" as *;
+
+/* The sidepanel menu */
+.header-sidepanel {
+	height: 100vh;
+	width: 0;
+	position: fixed;
+	z-index: 1;
+	overflow-x: hidden;
+	padding-top: 60px;
+	background-color: $dark-navy;
+	display: flex;
+	flex-direction: column;
+
+	&-link {
+		color: $snow;
+		text-decoration: none;
+		font-family: "Space Mono";
+		font-style: normal;
+		font-weight: 700;
+		font-size: 18px;
+		line-height: 25px;
+    margin: 12px 32px;
+	}
+
+	transition: 0.5s;
+}
+
+.openbtn {
+	font-size: 20px;
+	cursor: pointer;
+	padding: 10px 15px;
+	border: none;
+	background-color: transparent;
+}
