@@ -119,18 +119,56 @@ h4 {
   letter-spacing: -1.07143px;
 }
 
+.button {
+  background-color: #FCB72B;
+  border: none;
+  color: #F2F5F9;
+  width: 180px;
+  height: 53px;
+}
+
+.button:hover {
+  background-color: transparent;
+  border: 1px solid #FCB72B;
+  color: #FCB72B;
+}
+
+/* The header */
+.header-nav {
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  background-color: #fff;
+  position: fixed;
+  z-index: 2;
+}
+
+.header-nav-bar {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  margin: 24px 0;
+}
+.header-nav-bar-logo {
+  margin: auto;
+}
+.header-nav-bar-button {
+  padding-left: 32px;
+}
+
 /* The sidepanel menu */
 .header-sidepanel {
-  height: 100vh;
+  transition: 0.5s;
+  position: relative;
   width: 0;
-  position: fixed;
   z-index: 1;
   overflow-x: hidden;
   padding-top: 60px;
   background-color: #495567;
   display: flex;
   flex-direction: column;
-  transition: 0.5s;
+  flex: 1;
 }
 .header-sidepanel-link {
   color: #F2F5F9;
@@ -142,13 +180,20 @@ h4 {
   line-height: 25px;
   margin: 12px 32px;
 }
+.header-sidepanel-button {
+  margin: auto 32px 24px 32px;
+}
 
-.openbtn {
+.visually-shown {
+  width: 250px;
+}
+
+.toggle-btn {
   font-size: 20px;
   cursor: pointer;
-  padding: 10px 15px;
   border: none;
   background-color: transparent;
+  color: #FCB72B;
 }
 
 /*# sourceMappingURL=style.css.map */

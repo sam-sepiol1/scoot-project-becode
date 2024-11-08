@@ -1,9 +1,9 @@
-/* Set the width of the sidebar to 250px (show it) */
-function openNav() {
-    document.getElementById("header-sidepanel").style.width = "250px";
+function toggleNav() {
+	let sidepanel = document.getElementById("header-sidepanel");
+
+  if (sidepanel.classList.contains("visually-shown")) {
+    sidepanel.classList.remove("visually-shown");
+  } else {
+    sidepanel.classList.add("visually-shown");
   }
-  
-  /* Set the width of the sidebar to 0 (hide it) */
-  function closeNav() {
-    document.getElementById("header-sidepanel").style.width = "0";
-  } 
+}
