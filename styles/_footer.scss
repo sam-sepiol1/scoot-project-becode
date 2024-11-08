@@ -1,0 +1,86 @@
+@use "colors" as *;
+
+.footer {
+
+    background-color: $dark-navy;
+    width: 100%;
+    font-family: "Space Mono", monospace;
+    &-content {
+        display:grid;
+        grid-template-rows: 1fr 1fr;
+        &-signup {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            padding: 40px;
+            gap: 40px;
+            &-title {
+                text-align: center;
+                h2 {
+                    
+                    color: #ffff;
+                    font-size: 32px;
+                    
+                }
+
+            }
+
+            &-download {
+                display: flex;
+                gap: 20px;
+                &-button{
+                    background-color: $light-grey;
+                    color: $dark-navy;
+                    text-decoration: none;
+                    border-radius: 5px;
+                    width: max-content;
+                    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+                    display:flex;
+                    align-items: center;
+                    gap: 5px;
+                    &-info {
+                        &-title {
+                            font-size:12px;
+                            }
+                            &-subtitle{
+                                font-size:8px;
+                            }
+                    }
+                 
+                }
+
+            }
+
+            svg {
+                width: 20px;
+                height: 20px;
+            }
+        }
+
+        &-nav {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            align-items: center;
+            background-color: #333a44;
+            &-link {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                color: $dim-grey;
+                font-size: 15px;
+                gap: 20px
+            }
+            svg {
+                width: 24px;
+                height: 24px;
+                fill:$yellow;
+            }
+        }
+    }
+
+    a {
+        text-decoration: none;
+    }
+}
