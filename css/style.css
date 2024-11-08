@@ -150,11 +150,61 @@ h4 {
   align-items: center;
   margin: 24px 0;
 }
+@media (min-width: 768px) {
+  .header-nav-bar .mobile {
+    display: none;
+  }
+}
+.header-nav-bar .desktop {
+  display: none;
+}
+@media (min-width: 768px) {
+  .header-nav-bar .desktop {
+    display: flex;
+  }
+}
 .header-nav-bar-logo {
   margin: auto;
 }
+@media (min-width: 768px) {
+  .header-nav-bar-logo {
+    margin: 0;
+    margin-left: 32px;
+    margin-right: 58px;
+  }
+}
 .header-nav-bar-button {
   padding-left: 32px;
+}
+@media (min-width: 768px) {
+  .header-nav-bar-button {
+    display: none;
+  }
+}
+.header-nav-bar-desktop {
+  display: none;
+}
+@media (min-width: 768px) {
+  .header-nav-bar-desktop {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    margin-right: 32px;
+    width: 100%;
+  }
+  .header-nav-bar-desktop-links-link {
+    margin: 0 16px;
+    text-decoration: none;
+    color: #939CAA;
+    font-family: "Space Mono";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 25px;
+  }
+  .header-nav-bar-desktop-button {
+    margin-left: auto;
+  }
 }
 
 /* The sidepanel menu */
