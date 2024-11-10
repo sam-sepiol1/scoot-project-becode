@@ -119,6 +119,13 @@ h4 {
   letter-spacing: -1.07143px;
 }
 
+p {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 25px;
+}
+
 .button {
   background-color: #FCB72B;
   border: none;
