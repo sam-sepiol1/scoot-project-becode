@@ -409,4 +409,82 @@ p {
   color: #FCB72B;
 }
 
+.heading {
+  background-image: url("../assets/locations/locations-heading-background.jpg");
+  background-size: cover;
+  background-position: center;
+  color: #F2F5F9;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 80px 0;
+}
+
+.steps {
+  display: flex;
+  flex-direction: column;
+  gap: 48px;
+  padding: 120px 32px;
+}
+.steps-step {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 24px;
+}
+.steps-step-title {
+  font-family: "Space Mono";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 28px;
+  color: #495567;
+  letter-spacing: -0.892857px;
+}
+.steps-step-text {
+  font-family: "Lexend Deca";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 25px;
+  color: #939CAA;
+  text-align: center;
+}
+
+.info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 32px;
+  text-align: center;
+  padding-left: 32px;
+  padding-right: 32px;
+  margin-bottom: 120px;
+}
+.info img {
+  width: 100%;
+}
+.info-article {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+  align-items: center;
+}
+.info-title {
+  font-family: "Space Mono";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 32px;
+  color: #495567;
+}
+.info-text {
+  font-family: "Lexend Deca";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 25px;
+  color: #939CAA;
+}
+
 /*# sourceMappingURL=style.css.map */

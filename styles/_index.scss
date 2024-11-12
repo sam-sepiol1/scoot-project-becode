@@ -1,0 +1,83 @@
+@use 'colors' as *;
+.heading {
+    background-image: url("../assets/locations/locations-heading-background.jpg");
+    background-size: cover;
+    background-position: center;
+    color: $snow;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 80px 0;
+}
+.steps {
+    display: flex;
+    flex-direction: column;
+    gap: 48px;
+    padding: 120px 32px;
+
+    &-step {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 24px;
+        &-title {
+            font-family: "Space Mono";
+            font-style: normal;
+            font-weight: 700;
+            font-size: 20px;
+            line-height: 28px;
+            color: $dark-navy;  
+            letter-spacing: -0.892857px;
+        }
+        &-text {
+            font-family: "Lexend Deca";
+            font-style: normal;
+            font-weight: 400;
+            font-size: 15px;
+            line-height: 25px;
+            color: $dim-grey;
+            text-align: center;
+        }
+    }
+
+}
+
+.info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 32px;
+    text-align: center;
+    padding-left: 32px;
+    padding-right: 32px;
+    margin-bottom: 120px;
+    img {
+        width: 100%;
+   
+    }
+
+    &-article {
+        display: flex;
+        flex-direction: column;
+        gap: 32px;
+        align-items: center;
+    }
+
+    &-title {
+        font-family: "Space Mono";
+        font-style: normal;
+        font-weight: 700;
+        font-size: 32px;
+        line-height: 32px;
+        color: $dark-navy;
+    }
+
+    &-text {
+        font-family: "Lexend Deca";
+        font-style: normal;
+        font-weight: 400;
+        font-size: 15px;
+        line-height: 25px;
+        color: $dim-grey;
+    }
+}
