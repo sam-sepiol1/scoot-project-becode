@@ -1,0 +1,101 @@
+@use "colors" as *;
+
+.heading {
+	background-image: url("../assets/locations/locations-heading-background.jpg");
+	background-size: cover;
+	background-position: center;
+	color: $snow;
+	align-items: center;
+	justify-content: center;
+	text-align: center;
+	padding: 80px 0;
+	margin-bottom: 72px;
+}
+
+.hero {
+	margin-bottom: 120px;
+	display: flex;
+	flex-direction: column;
+	gap: 120px;
+
+	&-content {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+		padding: 0 32px;
+	}
+
+	&-text {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+		text-align: center;
+		gap: 32px;
+	}
+}
+
+.values {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	gap: 64px;
+	padding: 0 32px;
+	color: $dark-navy;
+	margin-bottom: 128px;
+
+	&-content {
+		display: flex;
+		flex-direction: column;
+		gap: 56px;
+	}
+
+	&-content-item {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+		text-align: center;
+	}
+}
+
+.faq {
+	color: $dark-navy;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	margin: 0 32px 120px 32px;
+
+	&-title{ 
+		margin-bottom: 32px;
+	}
+
+	&-content-item-paragraph {
+		display: none;
+	}
+
+	&-content {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		gap: 32px;
+		width: 100%;
+	}
+
+	&-content-item {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+		text-align: center;
+		gap: 16px;
+		background-color: $snow;
+		width: 100%;
+		height: 112px;
+
+	}
+}
