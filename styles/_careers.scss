@@ -1,0 +1,97 @@
+@use "colors" as *;
+
+.heading {
+	background-image: url("../assets/locations/locations-heading-background.jpg");
+	background-size: cover;
+	background-position: center;
+	color: $snow;
+	align-items: center;
+	justify-content: center;
+	text-align: center;
+	padding: 80px 0;
+	margin-bottom: 72px;
+}
+
+.hero {
+	margin-bottom: 120px;
+
+	&-content {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+		gap: 56px;
+		padding: 0 32px;
+	}
+
+	&-text {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+		text-align: center;
+		gap: 32px;
+	}
+}
+
+.join-us {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	gap: 64px;
+	padding: 0 32px;
+
+	&-content {
+		display: flex;
+		flex-direction: column;
+	}
+
+	&-content-item {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+		text-align: center;
+		gap: 56px;
+	}
+}
+
+.jobs {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	gap: 16px;
+	margin: 0 32px;
+	margin-top: 145px;
+    margin-bottom: 120px;
+}
+
+.job-card {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	text-align: center;
+	background-color: #f2f5f9;
+	padding: 36px 32px;
+	width: 100%;
+    gap: 16px;
+
+	&-title {
+		font-style: normal;
+		font-weight: 700;
+		font-size: 18px;
+		line-height: 24px;
+		letter-spacing: -0.803571px;
+		color: $dark-navy;
+	}
+	&-subtitle {
+		font-style: normal;
+		font-weight: 400;
+		font-size: 15px;
+		line-height: 25px;
+		color: $dark-navy;
+	}
+}
