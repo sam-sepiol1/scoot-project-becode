@@ -35,15 +35,13 @@
 
 		<main>
 			<section class="heading">
-				<picture>
-					<img src="../assets/about/heading-background.jpg" alt="" srcset="" />
-				</picture>
 				<h1 class="heading-title">About</h1>
+				<img class="heading-logo" src="../assets/about/header-circles.png" alt="" srcset="">
 			</section>
 
 			<section class="hero">
-				<div class="hero-content-one">
-					<picture>
+				<div class="hero-content hero-content-reverse">
+					<picture class="hero-content-image">
 						<img src="../assets/about/woman-smartphone.jpg" alt="" srcset="" />
 					</picture>
 					<div class="hero-text">
@@ -52,8 +50,8 @@
 					</div>
 				</div>
 
-				<div class="hero-content-two">
-					<picture>
+				<div class="hero-content">
+					<picture class="hero-content-image left-align">
 						<img src="../assets/about/city.jpg" alt="" srcset="" />
 					</picture>
 					<div class="hero-text">
@@ -68,62 +66,104 @@
 				<div class="values-content">
 					<div class="values-content-item">
 						<img src="../assets/about/value-1.jpg" alt="" srcset="" />
-						<h3 class="values-content-item-title">Our tech</h3>
+						<h4 class="values-content-item-title">Our tech</h4>
 						<p class="values-content-item-paragraph">We’re using cutting edge technology to drive accessible urban transportation forward. Our fully electric scooters are a joy to ride!</p>
 					</div>
 
 					<div class="values-content-item">
 						<img src="../assets/about/value-2.jpg" alt="" srcset="" />
-						<h3 class="values-content-item-title">Our integrity</h3>
+						<h4 class="values-content-item-title">Our integrity</h4>
 						<p class="values-content-item-paragraph">We are fully committed to deliver a great yet safe, sustainable micro-mobility experience in every city we serve.</p>
 					</div>
 
 					<div class="values-content-item">
 						<img src="../assets/about/value-3.jpg" alt="" srcset="" />
-						<h3 class="values-content-item-title">Our community</h3>
+						<h4 class="values-content-item-title">Our community</h4>
 						<p class="values-content-item-paragraph">We support every community we serve. All workers are paid a living wage based on their location and are Scoot employees.</p>
 					</div>
 				</div>
 			</section>
 
 			<section class="faq">
-				<h2 class="faq-title">How it works</h2>
-				<div class="faq-content">
-					<div class="faq-content-item">
-						<h3 class="faq-content-item-title">How do I download the app?</h3>
-						<p class="faq-content-item-paragraph">
-							To download the Scoot app, you can search “Scoot” in both the App and Google Play stores. An even simpler way to do it would be to click the relevant link at the bottom of this page and you'll be re-directed to
-							the correct page.
-						</p>
+				<div class="faq-work">
+					<div class="faq-desktop">
+						<h2 class="faq-title">How it works</h2>
 					</div>
-
-					<div class="faq-content-item">
-						<h3 class="faq-content-item-title">Can I find a nearby Scoots?</h3>
-						<p class="faq-content-item-paragraph">Yes, you can easily find nearby Scoots using the Scoot app. The app will show you all available Scoots in your vicinity on a map, making it simple to locate and rent one.</p>
-					</div>
-
-					<div class="faq-content-item">
-						<h3 class="faq-content-item-title">Do I need a license to ride??</h3>
-						<p class="faq-content-item-paragraph">In most locations, you do not need a license to ride a Scoot. However, we recommend checking your local regulations to be sure.</p>
-					</div>
-					<h2 class="faq-title">Safe driving</h2>
-                    
-					<div class="faq-content-item">
-						<h3 class="faq-content-item-title">Should I wear a helmet?</h3>
-						<p class="faq-content-item-paragraph">Yes, we recommend that all riders wear a helmet when riding a Scoot. Helmets are available at most of our locations for a small fee.</p>
-					</div>
-                    
-					<div class="faq-content-item">
-						<h3 class="faq-content-item-title">How about the rules & regulations?</h3>
-						<p class="faq-content-item-paragraph">We recommend that all riders familiarize themselves with local laws and regulations before riding a Scoot. We also recommend taking our free online driving course to learn how to safely ride a Scoot.</p>
-					</div>
-                    
-					<div class="faq-content-item">
-						<h3 class="faq-content-item-title">What if I damage my scoot</h3>
-						<p class="faq-content-item-paragraph"> If you damage a Scoot, please contact our customer service team as soon as possible. You can reach them via the app or by emailing at customer@scoot.com </p>
-					</div>
-
+					
+					<div class="faq-content">
+						<div class="faq-content-item">
+							<div class="faq-content-item-head">
+								<h3 class="faq-content-item-title">How do I download the app?</h3>
+								<button class="faq-toggle-button" onclick="toggleAnswer(this)">
+									<img class="faq-arrow" src="../assets/about/faq-arrow.svg" alt="" srcset="">
+								</button>
+							</div>
+							<p class="faq-content-item-paragraph faq-answer d-none">
+								To download the Scoot app, you can search “Scoot” in both the App and Google Play stores. An even simpler way to do it would be to click the relevant link at the bottom of this page and you'll be re-directed to
+								the correct page.
+							</p>
+						</div>
+					
+						<div class="faq-content-item">
+							<div class="faq-content-item-head">
+								<h3 class="faq-content-item-title">Can I find a nearby Scoots?</h3>
+								<button class="faq-toggle-button" onclick="toggleAnswer(this)">
+									<img class="faq-arrow" src="../assets/about/faq-arrow.svg" alt="" srcset="">
+								</button>
+							</div>
+							<p class="faq-content-item-paragraph faq-answer d-none">Yes, you can easily find nearby Scoots using the Scoot app. The app will show you all available Scoots in your vicinity on a map, making it simple to locate and rent one.</p>
+						</div>
+						
+						<div class="faq-content-item">
+							<div class="faq-content-item-head">
+								<h3 class="faq-content-item-title">Do I need a license to ride?</h3>
+								<button class="faq-toggle-button" onclick="toggleAnswer(this)">
+									<img class="faq-arrow" src="../assets/about/faq-arrow.svg" alt="" srcset="">
+								</button>
+							</div>
+							<p class="faq-content-item-paragraph faq-answer d-none">In most locations, you do not need a license to ride a Scoot. However, we recommend checking your local regulations to be sure.</p>
+						</div>
+						</div>
 				</div>
+				<div class="faq-safety">
+					<div class="faq-desktop">
+						<h2 class="faq-title">Safe driving</h2>
+					</div>
+					<div class="faq-content">
+						<div class="faq-content-item">
+							<div class="faq-content-item-head">
+								<h3 class="faq-content-item-title">Should I wear a helmet?</h3>
+								<button class="faq-toggle-button" onclick="toggleAnswer(this)">
+									<img class="faq-arrow" src="../assets/about/faq-arrow.svg" alt="" srcset="">
+								</button>
+							</div>
+							<p class="faq-content-item-paragraph faq-answer d-none">Yes, we recommend that all riders wear a helmet when riding a Scoot. Helmets are available at most of our locations for a small fee.</p>
+						</div>
+						
+						<div class="faq-content-item">
+							<div class="faq-content-item-head">
+								<h3 class="faq-content-item-title">How about the rules & regulations?</h3>
+								<button class="faq-toggle-button" onclick="toggleAnswer(this)">
+									<img class="faq-arrow" src="../assets/about/faq-arrow.svg" alt="" srcset="">
+								</button>
+							</div>
+							<p class="faq-content-item-paragraph faq-answer d-none">We recommend that all riders familiarize themselves with local laws and regulations before riding a Scoot. We also recommend taking our free online driving course to learn how to safely ride a Scoot.</p>
+						</div>
+						
+						<div class="faq-content-item">
+							<div class="faq-content-item-head">
+								<h3 class="faq-content-item-title">What if I damage my scoot?</h3>
+								<button class="faq-toggle-button" onclick="toggleAnswer(this)">
+									<img class="faq-arrow" src="../assets/about/faq-arrow.svg" alt="" srcset="">
+								</button>
+							</div>
+							<p class="faq-content-item-paragraph faq-answer d-none">If you damage a Scoot, please contact our customer service team as soon as possible. You can reach them via the app or by emailing at customer@scoot.com</p>
+						</div>
+					</div>
+					</div>
+				</div>
+				
+
 			</section>
 
 		</main>
