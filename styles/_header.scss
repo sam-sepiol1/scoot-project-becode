@@ -77,6 +77,10 @@ $md-screen: 768px;
 				font-weight: 700;
 				font-size: 18px;
 				line-height: 25px;
+
+				&:hover {
+					color: $yellow;
+				}
 			}
 
 			&-button { 
