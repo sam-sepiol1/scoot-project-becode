@@ -15,6 +15,9 @@ $md-screen: 768px;
 	display: flex;
 	flex-direction: column;
 	background-color: #fff;
+	@include media-minwidth($md-screen) {
+		height: 96px;
+	}
 }
 
 .header-nav-bar {

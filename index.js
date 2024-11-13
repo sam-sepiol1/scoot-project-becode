@@ -11,10 +11,13 @@ function toggleNav() {
 
 function toggleAnswer(button) {
   let answer = button.closest(".faq-content-item").querySelector(".faq-answer");
+  let arrow = button.querySelector(".faq-arrow");
 
   if (answer.classList.contains("d-none")) {
       answer.classList.remove("d-none");
+      arrow.classList.add("arrow-reverse");
   } else {
       answer.classList.add("d-none");
+      arrow.classList.remove("arrow-reverse");
   }
 }
