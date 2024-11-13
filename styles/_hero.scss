@@ -34,6 +34,10 @@ $lg-screen: 1040px;
             gap: 24px;
         }
 
+		&-text-paragraph { 
+			color: $dim-grey;
+		}
+
 
 		@include media-minwidth($lg-screen) {
 			flex-direction: row;

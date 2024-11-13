@@ -36,4 +36,12 @@
 		height: fit-content;
 		gap: 16px;
 	}
+
+	&-content-item-title {
+		color: $dark-navy;
+	}
+	&-content-item-paragraph {
+		color: $dim-grey;
+	}
+
 }
