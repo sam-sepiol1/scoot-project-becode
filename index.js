@@ -7,3 +7,14 @@ function toggleNav() {
     sidepanel.classList.add("visually-shown");
   }
 }
+
+
+function toggleAnswer(button) {
+  let answer = button.closest(".faq-content-item").querySelector(".faq-answer");
+
+  if (answer.classList.contains("d-none")) {
+      answer.classList.remove("d-none");
+  } else {
+      answer.classList.add("d-none");
+  }
+}
