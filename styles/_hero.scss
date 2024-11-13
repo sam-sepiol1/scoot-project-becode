@@ -1,0 +1,62 @@
+@use 'colors' as *;
+
+$md-screen: 768px;
+$lg-screen: 1040px;
+@mixin media-minwidth($screensize) {
+	@media (min-width: $screensize) {
+		@content;
+	}
+}
+
+.hero {
+	margin-bottom: 120px;
+	display: flex;
+	flex-direction: column;
+    align-items: center;
+    justify-content: center;
+	gap: 120px;
+    color: $dark-navy;
+
+	&-content {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+		padding: 0 32px;
+		gap: 56px;
+
+        &-text{ 
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            gap: 24px;
+        }
+
+
+		@include media-minwidth($lg-screen) {
+			flex-direction: row;
+
+			&-reverse {
+				flex-direction: row-reverse;
+			}
+
+			&-image {
+				width: 100%;
+				max-height: 445px;
+			}
+
+            &-text{
+                align-items: flex-start;
+                text-align: left;
+            }
+
+			.left-align { 
+				display: flex;
+				justify-content: right;
+			}
+		}
+	}
+}
+
