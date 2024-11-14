@@ -547,6 +547,23 @@ p {
     text-align: center;
     gap: 40px;
   }
+  .infos {
+    align-items: center;
+    width: 100%;
+  }
+  .infos-info {
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 120px;
+    width: 75%;
+  }
+  .info-invert {
+    flex-direction: row-reverse;
+  }
+  .infos-info-image {
+    width: 100%;
+  }
 }
 main {
   overflow: hidden;
