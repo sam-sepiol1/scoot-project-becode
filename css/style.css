@@ -409,28 +409,84 @@ p {
   color: #FCB72B;
 }
 
-.heading {
-  background-image: url("../assets/locations/locations-heading-background.jpg");
+main {
+  max-width: 1440px;
+  width: 100%;
+  margin-top: 34px;
+}
+
+.hero {
+  position: relative;
+  background: url(../assets/index/man-on-scooter.jpg);
+  background-repeat: no-repeat;
   background-size: cover;
-  background-position: center;
-  color: #F2F5F9;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-  padding: 80px 0;
+}
+.hero-content {
+  color: #ffffff;
+  padding-top: 153px;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+.hero-content-title {
+  margin-left: 165px;
+  font-family: "Space Mono";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 56px;
+  line-height: 56px;
+  letter-spacing: -2.5px;
+  width: 500px;
+  height: 112px;
+}
+.hero-content-text {
+  margin-left: 260px;
+  font-family: "Lexend Deca";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 25px;
+  width: 405px;
+  height: 100px;
+}
+.hero-content button {
+  margin-left: 260px;
+  margin-bottom: 152px;
+}
+.hero-shapes #arrow-part1 {
+  position: absolute;
+  bottom: 295.5px;
+}
+.hero-shapes #arrow-part2 {
+  position: absolute;
+  right: 288.62px;
+  bottom: 157.56px;
+}
+.hero-shapes #small-circles {
+  position: absolute;
+  right: 0;
+  bottom: 165px;
 }
 
 .steps {
+  position: relative;
+}
+.steps-container {
+  padding-left: 165px;
+  padding-right: 155px;
+  padding-top: 160px;
   display: flex;
-  flex-direction: column;
-  gap: 48px;
-  padding: 120px 32px;
+  gap: 30px;
 }
 .steps-step {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  gap: 24px;
+  gap: 40px;
+}
+.steps-step-content {
+  display: flex;
+  flex-direction: column;
+  gap: 27px;
 }
 .steps-step-title {
   font-family: "Space Mono";
@@ -448,43 +504,235 @@ p {
   font-size: 15px;
   line-height: 25px;
   color: #939CAA;
-  text-align: center;
+}
+.steps-step-icon {
+  width: 96px;
+  height: 96px;
+}
+.steps #icons-line {
+  position: absolute;
+  z-index: -1;
+  top: 208px;
 }
 
-.info {
+.infos {
+  margin-top: 200px;
+  margin-bottom: 200px;
   display: flex;
+  gap: 160px;
   flex-direction: column;
-  align-items: center;
-  gap: 32px;
-  text-align: center;
-  padding-left: 32px;
-  padding-right: 32px;
-  margin-bottom: 120px;
 }
-.info img {
-  width: 100%;
-}
-.info-article {
+.infos-info {
   display: flex;
-  flex-direction: column;
-  gap: 32px;
+  gap: 220px;
   align-items: center;
 }
-.info-title {
+.infos-info-right {
+  flex-direction: row-reverse;
+  justify-content: flex-end;
+  padding-left: 165px;
+}
+.infos-info-image {
+  display: flex;
+  gap: 64px;
+  position: relative;
+  overflow: hidden;
+}
+.infos-info-image-arrow {
+  position: absolute;
+}
+.infos-info-image #arrow-smartphone {
+  bottom: 0px;
+}
+.infos-info-image #arrow-city {
+  right: 260px;
+}
+.infos-info-image #arrow-wallet {
+  top: 85px;
+  left: 255px;
+}
+.infos-info-article {
+  width: 445px;
+  height: 313px;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+.infos-info-article-title {
   font-family: "Space Mono";
   font-style: normal;
   font-weight: 700;
-  font-size: 32px;
-  line-height: 32px;
+  font-size: 48px;
+  line-height: 48px;
   color: #495567;
 }
-.info-text {
+.infos-info-article-text {
   font-family: "Lexend Deca";
   font-style: normal;
   font-weight: 400;
   font-size: 15px;
   line-height: 25px;
   color: #939CAA;
+}
+.infos-info-article img {
+  width: 100%;
+  height: auto;
+}
+
+@media (max-width: 768px) {
+  .hero-content {
+    color: #ffffff;
+    padding-top: 153px;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+  }
+  .hero-content-title {
+    margin-left: 165px;
+    font-family: "Space Mono";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 56px;
+    line-height: 56px;
+    letter-spacing: -2.5px;
+    width: 500px;
+    height: 112px;
+  }
+  .hero-content-text {
+    margin-left: 260px;
+    font-family: "Lexend Deca";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 25px;
+    width: 405px;
+    height: 100px;
+  }
+  .hero-content button {
+    margin-left: 260px;
+    margin-bottom: 152px;
+  }
+  .hero-shapes #arrow-part1 {
+    position: absolute;
+    bottom: 295.5px;
+  }
+  .hero-shapes #arrow-part2 {
+    position: absolute;
+    right: 288.62px;
+    bottom: 157.56px;
+  }
+  .hero-shapes #small-circles {
+    position: absolute;
+    right: 0;
+    bottom: 165px;
+  }
+  .steps {
+    position: relative;
+  }
+  .steps-container {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+  }
+  .steps-step {
+    display: flex;
+    flex-direction: row;
+    gap: 40px;
+  }
+  .steps-step-content {
+    display: flex;
+    flex-direction: column;
+    gap: 27px;
+  }
+  .steps-step-title {
+    font-family: "Space Mono";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 28px;
+    color: #495567;
+    letter-spacing: -0.892857px;
+  }
+  .steps-step-text {
+    font-family: "Lexend Deca";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 25px;
+    color: #939CAA;
+  }
+  .steps-step-icon {
+    width: 96px;
+    height: 96px;
+  }
+  .steps #icons-line {
+    position: absolute;
+    z-index: -1;
+    top: 208px;
+    transform: rotate(90deg);
+  }
+  .infos {
+    padding-top: 0px;
+    padding-bottom: 0px;
+    display: flex;
+    gap: 56px;
+    flex-direction: column;
+  }
+  .infos-info {
+    display: flex;
+    flex-direction: column;
+    gap: 56px;
+    align-items: center;
+  }
+  .infos-info-right {
+    justify-content: flex-end;
+    padding-left: 0px;
+  }
+  .infos-info-image {
+    display: flex;
+    gap: 64px;
+    position: relative;
+  }
+  .infos-info-image-arrow {
+    position: absolute;
+  }
+  .infos-info-image #arrow-smartphone {
+    bottom: 0px;
+  }
+  .infos-info-image #arrow-city {
+    right: 260px;
+  }
+  .infos-info-image #arrow-wallet {
+    top: 85px;
+    left: 255px;
+  }
+  .infos-info-article {
+    width: 573px;
+    height: 304px;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+  }
+  .infos-info-article-title {
+    font-family: "Space Mono";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 48px;
+    color: #495567;
+  }
+  .infos-info-article-text {
+    font-family: "Lexend Deca";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 25px;
+    color: #939CAA;
+  }
+  .infos-info-article img {
+    width: 445px;
+    height: auto;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
