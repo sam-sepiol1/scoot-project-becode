@@ -1,0 +1,334 @@
+@use "colors" as *;
+// *{
+//     outline: 1px green solid;
+// }
+// main {
+//     max-width: 1440px;
+//     width: 100%;
+//     margin-top: 34px;
+// }
+
+.hero-index {
+    background: url(../assets/index/man-on-scooter.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+    padding: 30px;
+
+    &-content-title {
+        font-style: normal;
+        font-weight: 700;
+        font-size: 56px;
+        line-height: 56px;
+        color: $snow;
+        letter-spacing: -2.5px;
+     }
+}
+
+.steps {
+    position: relative; //icons-line parent
+    &-container {
+        padding-left: 165px; //create a margin-left of steps like the design
+        padding-right: 155px; //create a margin-right of steps like the design
+        padding-top: 160px;
+        display: flex; //make each step as a column
+        gap: 30px;
+    }
+
+    &-step {
+        display: flex; //make each step content as row
+        flex-direction: column;
+        gap: 40px;
+
+        &-content {
+            display: flex;
+            flex-direction: column;
+            gap: 27px;
+        }
+        &-title {
+            font-family: "Space Mono";
+            font-style: normal;
+            font-weight: 700;
+            font-size: 20px;
+            line-height: 28px;
+            color: $dark-navy;
+            letter-spacing: -0.892857px;
+        }
+        &-text {
+            font-family: "Lexend Deca";
+            font-style: normal;
+            font-weight: 400;
+            font-size: 15px;
+            line-height: 25px;
+            color: $dim-grey;
+        }
+        &-icon {
+            width: 96px;
+            height: 96px;
+        }
+    }
+
+    #icons-line {
+        position: absolute;
+        z-index: -1;
+        top: 208px;
+    }
+}
+
+.infos {
+    
+    margin-top: 200px;
+    margin-bottom: 200px;
+    display: flex;
+    gap: 160px;
+    flex-direction: column;
+
+    &-info {
+        display: flex;
+        gap: 220px;
+        align-items: center;
+        &-right {
+            flex-direction: row-reverse;
+            justify-content: flex-end;
+            padding-left: 165px;
+        }
+
+        &-image {
+            display: flex;
+            gap: 64px;
+            position: relative;
+            overflow: hidden;
+
+            &-arrow {
+               position: absolute;  
+            }
+            #arrow-smartphone {
+               bottom: 0px;
+            }
+            #arrow-city {
+           right: 260px;
+            }
+            #arrow-wallet {
+            top:85px;
+            left: 255px;
+            }
+        }
+        &-article {
+            width: 445px;
+            height: 313px;
+            display: flex;
+            flex-direction: column;
+            gap: 24px;
+
+            &-title {
+                font-family: "Space Mono";
+                font-style: normal;
+                font-weight: 700;
+                font-size: 48px;
+                line-height: 48px;
+                color: $dark-navy;
+            }
+            &-text {
+                font-family: "Lexend Deca";
+                font-style: normal;
+                font-weight: 400;
+                font-size: 15px;
+                line-height: 25px;
+                color: $dim-grey;
+            }
+
+            img {
+                width: 100%;
+                height: auto;
+            }
+        }
+    }  
+}
+
+// @media (max-width:768px) {
+
+//     .hero {
+//         &-content {
+//             color: #ffffff;
+//             padding-top: 153px;
+//             display: flex;
+//             flex-direction: column;
+//             gap: 40px;
+//             &-title {
+//                 margin-left: 165px;
+//                 //font properties
+//                 font-family: "Space Mono";
+//                 font-style: normal;
+//                 font-weight: 700;
+//                 font-size: 56px;
+//                 line-height: 56px;
+//                 letter-spacing: -2.5px;
+    
+//                 //bloc-size
+//                 width: 500px;
+//                 height: 112px;
+//             }
+//             &-text {
+//                 margin-left: 260px;
+//                 //font-size
+//                 font-family: "Lexend Deca";
+//                 font-style: normal;
+//                 font-weight: 400;
+//                 font-size: 15px;
+//                 line-height: 25px;
+    
+//                 //bloc-size
+//                 width: 405px;
+//                 height: 100px;
+//             }
+    
+//             button {
+//                 margin-left: 260px;
+//                 margin-bottom: 152px;
+//             }
+//         }
+    
+//         &-shapes {
+//             #arrow-part1 {
+//                 //!!! Position enfant
+//                 position: absolute;
+//                 bottom: 295.5px;
+//             }
+    
+//             #arrow-part2 {
+//                 //!!! Position enfant
+//                 position: absolute;
+//                 right: 288.62px;
+//                 bottom: 157.56px;
+//             }
+    
+//             #small-circles {
+//                 //!!! Child content position
+//                 position: absolute;
+//                 right: 0;
+//                 bottom: 165px;
+//             }
+//         }
+//     }
+
+//     .steps {
+//         position: relative;
+//         &-container {
+
+//             display: flex;
+//             flex-direction: column;
+//             gap: 30px;
+//         }
+    
+//         &-step {
+//             display: flex; //make each step content as row
+//             flex-direction: row;
+//             gap: 40px;
+    
+//             &-content {
+//                 display: flex;
+//                 flex-direction: column;
+//                 gap: 27px;
+//             }
+//             &-title {
+//                 font-family: "Space Mono";
+//                 font-style: normal;
+//                 font-weight: 700;
+//                 font-size: 20px;
+//                 line-height: 28px;
+//                 color: $dark-navy;
+//                 letter-spacing: -0.892857px;
+//             }
+//             &-text {
+//                 font-family: "Lexend Deca";
+//                 font-style: normal;
+//                 font-weight: 400;
+//                 font-size: 15px;
+//                 line-height: 25px;
+//                 color: $dim-grey;
+//             }
+//             &-icon {
+//                 width: 96px;
+//                 height: 96px;
+//             }
+//         }
+    
+//         #icons-line {
+//             position: absolute;
+//             z-index: -1;
+//             top: 208px;
+//             transform:rotate(90deg)
+//         }
+//     }
+
+//     .infos {
+    
+//         padding-top: 0px;//!!!à rajouter
+//         padding-bottom: 0px;//!!!!à rajouter
+//         display: flex;
+//         gap: 56px;//change
+//         flex-direction: column;//add
+//         &-info {
+//             display: flex;
+//             flex-direction: column;
+//             gap: 56px;//change
+//             align-items: center;
+            
+//             &-right {
+//                 //flex-direction: row-reverse;
+//                 justify-content: flex-end;
+//                 padding-left: 0px;
+//             }
+//             &-image {
+//                 display: flex;
+//                 gap: 64px;
+//                 position: relative;
+    
+//                 &-arrow {
+//                    position: absolute;  
+//                 }
+//                 #arrow-smartphone {
+//                    bottom: 0px;
+//                 }
+//                 #arrow-city {
+//                right: 260px;
+//                 }
+//                 #arrow-wallet {
+//                 top:85px;
+//                 left: 255px;
+//                 }
+//             }
+//             &-article {
+//                 width: 573px;//!!change
+//                 height: 304px;//!!
+//                 display: flex;
+//                 flex-direction: column;
+//                 gap: 24px;
+    
+//                 &-title {
+//                     font-family: "Space Mono";
+//                     font-style: normal;
+//                     font-weight: 700;
+//                     font-size: 48px;
+//                     line-height: 48px;
+//                     color: $dark-navy;
+//                 }
+//                 &-text {
+//                     font-family: "Lexend Deca";
+//                     font-style: normal;
+//                     font-weight: 400;
+//                     font-size: 15px;
+//                     line-height: 25px;
+//                     color: $dim-grey;
+//                 }
+    
+//                 img {
+//                     width: 445px;
+//                     height: auto;
+//                 }
+//             }
+//         }  
+//     }
+
+// }

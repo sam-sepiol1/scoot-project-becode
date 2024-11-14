@@ -417,6 +417,134 @@ p {
   color: #FCB72B;
 }
 
+.hero-index {
+  background: url(../assets/index/man-on-scooter.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 100%;
+  padding: 30px;
+}
+.hero-index-content-title {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 56px;
+  line-height: 56px;
+  color: #F2F5F9;
+  letter-spacing: -2.5px;
+}
+
+.steps {
+  position: relative;
+}
+.steps-container {
+  padding-left: 165px;
+  padding-right: 155px;
+  padding-top: 160px;
+  display: flex;
+  gap: 30px;
+}
+.steps-step {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+.steps-step-content {
+  display: flex;
+  flex-direction: column;
+  gap: 27px;
+}
+.steps-step-title {
+  font-family: "Space Mono";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 28px;
+  color: #495567;
+  letter-spacing: -0.892857px;
+}
+.steps-step-text {
+  font-family: "Lexend Deca";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 25px;
+  color: #939CAA;
+}
+.steps-step-icon {
+  width: 96px;
+  height: 96px;
+}
+.steps #icons-line {
+  position: absolute;
+  z-index: -1;
+  top: 208px;
+}
+
+.infos {
+  margin-top: 200px;
+  margin-bottom: 200px;
+  display: flex;
+  gap: 160px;
+  flex-direction: column;
+}
+.infos-info {
+  display: flex;
+  gap: 220px;
+  align-items: center;
+}
+.infos-info-right {
+  flex-direction: row-reverse;
+  justify-content: flex-end;
+  padding-left: 165px;
+}
+.infos-info-image {
+  display: flex;
+  gap: 64px;
+  position: relative;
+  overflow: hidden;
+}
+.infos-info-image-arrow {
+  position: absolute;
+}
+.infos-info-image #arrow-smartphone {
+  bottom: 0px;
+}
+.infos-info-image #arrow-city {
+  right: 260px;
+}
+.infos-info-image #arrow-wallet {
+  top: 85px;
+  left: 255px;
+}
+.infos-info-article {
+  width: 445px;
+  height: 313px;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+.infos-info-article-title {
+  font-family: "Space Mono";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 48px;
+  color: #495567;
+}
+.infos-info-article-text {
+  font-family: "Lexend Deca";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 25px;
+  color: #939CAA;
+}
+.infos-info-article img {
+  width: 100%;
+  height: auto;
+}
+
 main {
   overflow: hidden;
 }
