@@ -17,14 +17,13 @@
 	background-position: center;
 }
 
-
 .faq {
 	color: $dark-navy;
 	display: flex;
 	flex-direction: column;
 	align-items: center;
 	justify-content: center;
-	gap: 32px;
+	gap: 64px;
 	margin: 50px;
 
 	@include media-minwidth($md-screen) {
