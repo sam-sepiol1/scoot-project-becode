@@ -2,6 +2,10 @@
 @use "typography" as *;
 @use "responsive" as *;
 
+// * { 
+// outline: 1px solid red; 
+// }
+
 
 .d-none {
 	display: none;
@@ -29,7 +33,6 @@
 	@include media-minwidth($md-screen) {
 		&-work, &-safety {
 			display: flex;
-			margin: 0 32px;
 			width: 100%;
 		}
 	}
@@ -43,11 +46,6 @@
 		padding: 16px;
 		width: 100%;
 		@include media-minwidth($md-screen) {
-			justify-content: space-between;
-			flex-direction: row;
-			padding: 0 40px 0 32px;
-		}
-		@include media-minwidth($lg-screen) {
 			justify-content: space-between;
 			flex-direction: row;
 			padding: 0 40px 0 32px;
@@ -84,7 +82,7 @@
 		gap: 16px;
 		background-color: $snow;
 		width: 100%;
-		min-height: 112px;
+		height: 100%;
 	}
 
 	&-content-item-title {
@@ -94,17 +92,19 @@
 		line-height: 24px;
 		letter-spacing: -0.803571px;
 		color: $dark-navy;
+		padding: 50px 0;
+
 	}
 }
 
 .faq-answer {
-	padding: 0 32px 32px 32px;
 	text-align: left;
-
+	padding: 0 32px 32px 32px;
+	margin-top: -32px;
 	font-style: normal;
 	font-weight: 400;
 	font-size: 15px;
 	line-height: 25px;
 
-	color: #495567;
+	color: $dim-grey;
 }
