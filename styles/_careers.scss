@@ -48,7 +48,8 @@
 		flex-direction: row;
 		justify-content: space-between;
 		width: 100%;
-		&-text { 
+
+		&-title, &-subtitle { 
 			text-align: left;
 		}
 	}
