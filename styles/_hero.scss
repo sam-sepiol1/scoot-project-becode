@@ -1,4 +1,4 @@
-@use 'colors' as *;
+@use "colors" as *;
 
 $md-screen: 768px;
 $lg-screen: 1040px;
@@ -12,10 +12,15 @@ $lg-screen: 1040px;
 	margin-bottom: 120px;
 	display: flex;
 	flex-direction: column;
-    align-items: center;
-    justify-content: center;
+	align-items: center;
+	justify-content: center;
 	gap: 120px;
-    color: $dark-navy;
+	color: $dark-navy;
+	
+	@include media-minwidth($lg-screen) {
+		width: 75%;
+		margin: auto;
+	}
 
 	&-content {
 		display: flex;
@@ -26,45 +31,55 @@ $lg-screen: 1040px;
 		gap: 56px;
 
 		@include media-minwidth($lg-screen) {
-			gap: 220px;
-		}
-
-        &-text{ 
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-            text-align: center;
-            gap: 24px;
-        }
-
-		&-text-paragraph { 
-			color: $dim-grey;
-		}
-
-
-		@include media-minwidth($lg-screen) {
 			flex-direction: row;
+			min-height: 445px;
+			gap: 120px;
+			justify-content: center;
+			align-items: center;
 
 			&-reverse {
 				flex-direction: row-reverse;
 			}
 
 			&-image {
-				max-height: 445px;
+				height: 445px;
+				width: 445px;
+				display: flex;
+				align-items: center;
+				justify-content: center;
+
+				img { 
+					width: 100%;
+					height: 100%;
+				}
 			}
 
-            &-text{
-                align-items: flex-start;
-                text-align: left;
-				width: 25%;
-            }
+			&-text {
+				align-items: flex-start;
+				text-align: left;
+				width: 100%;
+			}
 
-			.left-align { 
+			.left-align {
 				display: flex;
 				justify-content: right;
 			}
 		}
+
+
+		&-text {
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			justify-content: center;
+			text-align: center;
+			gap: 24px;
+		}
+
+		&-text-paragraph {
+			color: $dim-grey;
+		}
+
+		
 	}
 }
-
