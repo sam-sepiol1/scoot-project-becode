@@ -534,11 +534,18 @@ p {
   }
 }
 @media (min-width: 1040px) {
+  .steps {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
   .steps-container {
     flex-direction: row;
     align-items: center;
     justify-content: center;
     gap: 30px;
+    width: 75%;
   }
   .steps-step {
     flex-direction: column;
@@ -546,6 +553,7 @@ p {
     justify-content: center;
     text-align: center;
     gap: 40px;
+    width: 100%;
   }
   .infos {
     align-items: center;
