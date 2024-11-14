@@ -29,6 +29,11 @@ $lg-screen: 1040px;
 		justify-content: center;
 		padding: 0 32px;
 		gap: 56px;
+		
+		&-image img { 
+			min-height: 311px;
+			min-width: 311px;
+		}
 
 		@include media-minwidth($lg-screen) {
 			flex-direction: row;
