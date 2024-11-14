@@ -31,19 +31,19 @@ main {
 	
 }
 
-.arrow-one::after{ 
-	content:'';
-	background-image: url('../assets/about/hero-arrow.svg');
-	background-repeat: no-repeat;
-	background-size: contain;
-	background-position:right;
-	display: block;
-	width: 100%;
-	height: 50%;
-	position: absolute;
-	z-index: 1;
-	top: -250px;
-}
+// .arrow-one::after{ 
+// 	content:'';
+// 	background-image: url('../assets/about/hero-arrow.svg');
+// 	background-repeat: no-repeat;
+// 	background-size: contain;
+// 	background-position:right;
+// 	display: block;
+// 	width: 100%;
+// 	height: 50%;
+// 	position: absolute;
+// 	z-index: 1;
+// 	top: -250px;
+// }
 
 
 
@@ -51,21 +51,21 @@ main {
 	position: relative;
 }
 
-.arrow-two::after{ 
-	content: url('../assets/about/hero-arrow.svg');
-	display: block;
-	width: 100%;
-	z-index: 1;
-	position: absolute;
-	top: 0px;
-	right: 50px;
-	transform: rotate(180deg);
+// .arrow-two::after{ 
+// 	content: url('../assets/about/hero-arrow.svg');
+// 	display: block;
+// 	width: 100%;
+// 	z-index: 1;
+// 	position: absolute;
+// 	top: 0px;
+// 	right: 50px;
+// 	transform: rotate(180deg);
 
-	@include media-minwidth($md-screen) {
-		top: 150px;
-		right: 100px;
-	}
-}
+// 	@include media-minwidth($md-screen) {
+// 		top: 150px;
+// 		right: 100px;
+// 	}
+// }
 
 .faq {
 	color: $dark-navy;
