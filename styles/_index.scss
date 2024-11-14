@@ -1,4 +1,5 @@
 @use "colors" as *;
+@use 'responsive' as *;
 
 // *{
 //     outline: 1px green solid;
@@ -13,41 +14,43 @@
     background: url(../assets/index/man-on-scooter.jpg);
     background-repeat: no-repeat;
     background-size: cover;
+    padding: 115px 32px 50px 32px;
     width: 100%;
     height: 100%;
-    padding: 115px 32px;
+}
 
+.hero-index-content {
     display: flex;
     flex-direction: column;
-    gap: 32px;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+    height: 100%;
 }
 
-
-.hero-content-title { 
+.hero-index-content-title, .hero-index-content-text { 
     color: $snow;
     text-align: center;
-    
-}
-.hero-content-text { 
-    color: $snow;
-    text-align: center;
-
 }
 
 .steps {
-    position: relative; //icons-line parent
+    margin-top: 120px;
     &-container {
-        padding-left: 165px; //create a margin-left of steps like the design
-        padding-right: 155px; //create a margin-right of steps like the design
-        padding-top: 160px;
-        display: flex; //make each step as a column
+        display: flex; 
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
         gap: 30px;
+        padding: 0 32px;
     }
 
     &-step {
         display: flex; //make each step content as row
         flex-direction: column;
+        align-items: center;
         gap: 40px;
+        width: 100%;
+        text-align: center;
 
         &-content {
             display: flex;
@@ -71,272 +74,89 @@
             line-height: 25px;
             color: $dim-grey;
         }
-        &-icon {
-            width: 96px;
-            height: 96px;
-        }
-    }
 
-    #icons-line {
-        position: absolute;
-        z-index: -1;
-        top: 208px;
+        &-icon { 
+            max-width: 25%;
+        }
     }
 }
 
 .infos {
-    
-    margin-top: 200px;
-    margin-bottom: 200px;
+    margin: 120px 0;
     display: flex;
-    gap: 160px;
     flex-direction: column;
-
-    &-info {
-        display: flex;
-        gap: 220px;
-        align-items: center;
-        &-right {
-            flex-direction: row-reverse;
-            justify-content: flex-end;
-            padding-left: 165px;
-        }
-
-        &-image {
-            display: flex;
-            gap: 64px;
-            position: relative;
-            overflow: hidden;
-
-            &-arrow {
-               position: absolute;  
-            }
-            #arrow-smartphone {
-               bottom: 0px;
-            }
-            #arrow-city {
-           right: 260px;
-            }
-            #arrow-wallet {
-            top:85px;
-            left: 255px;
-            }
-        }
-        &-article {
-            width: 445px;
-            height: 313px;
+    gap: 120px;
+    padding: 0 32px;
+    
+        &-info {
             display: flex;
             flex-direction: column;
-            gap: 24px;
+            align-items: center;
+            justify-content: center;
+        }  
+    
+        &-info-article {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            gap: 32px;
+        }  
 
-            &-title {
-                font-family: "Space Mono";
-                font-style: normal;
-                font-weight: 700;
-                font-size: 48px;
-                line-height: 48px;
-                color: $dark-navy;
-            }
-            &-text {
-                font-family: "Lexend Deca";
-                font-style: normal;
-                font-weight: 400;
-                font-size: 15px;
-                line-height: 25px;
-                color: $dim-grey;
-            }
-
-            img {
-                width: 100%;
-                height: auto;
-            }
-        }
-    }  
 }
 
-// @media (max-width:768px) {
+.infos-info-article-title { 
+    color: $dark-navy;
+}
+.infos-info-article-text { 
+    color: $dim-grey;
+}
 
-//     .hero {
-//         &-content {
-//             color: #ffffff;
-//             padding-top: 153px;
-//             display: flex;
-//             flex-direction: column;
-//             gap: 40px;
-//             &-title {
-//                 margin-left: 165px;
-//                 //font properties
-//                 font-family: "Space Mono";
-//                 font-style: normal;
-//                 font-weight: 700;
-//                 font-size: 56px;
-//                 line-height: 56px;
-//                 letter-spacing: -2.5px;
-    
-//                 //bloc-size
-//                 width: 500px;
-//                 height: 112px;
-//             }
-//             &-text {
-//                 margin-left: 260px;
-//                 //font-size
-//                 font-family: "Lexend Deca";
-//                 font-style: normal;
-//                 font-weight: 400;
-//                 font-size: 15px;
-//                 line-height: 25px;
-    
-//                 //bloc-size
-//                 width: 405px;
-//                 height: 100px;
-//             }
-    
-//             button {
-//                 margin-left: 260px;
-//                 margin-bottom: 152px;
-//             }
-//         }
-    
-//         &-shapes {
-//             #arrow-part1 {
-//                 //!!! Position enfant
-//                 position: absolute;
-//                 bottom: 295.5px;
-//             }
-    
-//             #arrow-part2 {
-//                 //!!! Position enfant
-//                 position: absolute;
-//                 right: 288.62px;
-//                 bottom: 157.56px;
-//             }
-    
-//             #small-circles {
-//                 //!!! Child content position
-//                 position: absolute;
-//                 right: 0;
-//                 bottom: 165px;
-//             }
-//         }
-//     }
+@include media-minwidth($md-screen){ 
+    .hero-index {
+        display: flex; 
+        justify-content: center;
+        align-items: center;
+    }
+    .hero-index-content{
+        width: 50%;
+        align-items: center;
+    }
 
-//     .steps {
-//         position: relative;
-//         &-container {
+    .steps-step { 
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        text-align: left;
+        gap: 40px;
+    }
 
-//             display: flex;
-//             flex-direction: column;
-//             gap: 30px;
-//         }
-    
-//         &-step {
-//             display: flex; //make each step content as row
-//             flex-direction: row;
-//             gap: 40px;
-    
-//             &-content {
-//                 display: flex;
-//                 flex-direction: column;
-//                 gap: 27px;
-//             }
-//             &-title {
-//                 font-family: "Space Mono";
-//                 font-style: normal;
-//                 font-weight: 700;
-//                 font-size: 20px;
-//                 line-height: 28px;
-//                 color: $dark-navy;
-//                 letter-spacing: -0.892857px;
-//             }
-//             &-text {
-//                 font-family: "Lexend Deca";
-//                 font-style: normal;
-//                 font-weight: 400;
-//                 font-size: 15px;
-//                 line-height: 25px;
-//                 color: $dim-grey;
-//             }
-//             &-icon {
-//                 width: 96px;
-//                 height: 96px;
-//             }
-//         }
-    
-//         #icons-line {
-//             position: absolute;
-//             z-index: -1;
-//             top: 208px;
-//             transform:rotate(90deg)
-//         }
-//     }
 
-//     .infos {
-    
-//         padding-top: 0px;//!!!à rajouter
-//         padding-bottom: 0px;//!!!!à rajouter
-//         display: flex;
-//         gap: 56px;//change
-//         flex-direction: column;//add
-//         &-info {
-//             display: flex;
-//             flex-direction: column;
-//             gap: 56px;//change
-//             align-items: center;
-            
-//             &-right {
-//                 //flex-direction: row-reverse;
-//                 justify-content: flex-end;
-//                 padding-left: 0px;
-//             }
-//             &-image {
-//                 display: flex;
-//                 gap: 64px;
-//                 position: relative;
-    
-//                 &-arrow {
-//                    position: absolute;  
-//                 }
-//                 #arrow-smartphone {
-//                    bottom: 0px;
-//                 }
-//                 #arrow-city {
-//                right: 260px;
-//                 }
-//                 #arrow-wallet {
-//                 top:85px;
-//                 left: 255px;
-//                 }
-//             }
-//             &-article {
-//                 width: 573px;//!!change
-//                 height: 304px;//!!
-//                 display: flex;
-//                 flex-direction: column;
-//                 gap: 24px;
-    
-//                 &-title {
-//                     font-family: "Space Mono";
-//                     font-style: normal;
-//                     font-weight: 700;
-//                     font-size: 48px;
-//                     line-height: 48px;
-//                     color: $dark-navy;
-//                 }
-//                 &-text {
-//                     font-family: "Lexend Deca";
-//                     font-style: normal;
-//                     font-weight: 400;
-//                     font-size: 15px;
-//                     line-height: 25px;
-//                     color: $dim-grey;
-//                 }
-    
-//                 img {
-//                     width: 445px;
-//                     height: auto;
-//                 }
-//             }
-//         }  
-//     }
 
-// }
+
+}
+
+@include media-minwidth($lg-screen){ 
+    
+    
+    .steps-container { 
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        gap: 30px;
+    }
+
+
+    .steps-step { 
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        gap: 40px;
+    }
+
+
+}
+
+
