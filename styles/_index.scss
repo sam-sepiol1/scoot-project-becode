@@ -1,4 +1,5 @@
 @use "colors" as *;
+
 // *{
 //     outline: 1px green solid;
 // }
@@ -14,16 +15,23 @@
     background-size: cover;
     width: 100%;
     height: 100%;
-    padding: 30px;
+    padding: 115px 32px;
 
-    &-content-title {
-        font-style: normal;
-        font-weight: 700;
-        font-size: 56px;
-        line-height: 56px;
-        color: $snow;
-        letter-spacing: -2.5px;
-     }
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+}
+
+
+.hero-content-title { 
+    color: $snow;
+    text-align: center;
+    
+}
+.hero-content-text { 
+    color: $snow;
+    text-align: center;
+
 }
 
 .steps {
