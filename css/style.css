@@ -597,14 +597,6 @@ main {
   background-position: center;
 }
 
-.hero {
-  position: relative;
-}
-
-.arrow-two {
-  position: relative;
-}
-
 .faq {
   color: #495567;
   display: flex;
@@ -612,11 +604,21 @@ main {
   align-items: center;
   justify-content: center;
   gap: 64px;
-  margin: 50px;
+  max-width: 75%;
+  margin: 120px auto 160px auto;
 }
-@media (min-width: 768px) {
+.faq-heading {
+  width: 100%;
+}
+.faq-work, .faq-safety {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+@media (min-width: 1040px) {
   .faq-work, .faq-safety {
-    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
     width: 100%;
   }
 }
