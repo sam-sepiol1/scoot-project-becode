@@ -617,6 +617,9 @@ main {
   max-width: 75%;
   margin: 120px auto 160px auto;
 }
+.faq-arrow {
+  width: 16px;
+}
 .faq-heading {
   width: 100%;
 }
