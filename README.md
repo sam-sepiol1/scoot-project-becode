@@ -12,7 +12,7 @@ To get started with the Scoot Project, follow these steps:
 
 1. Clone the repository:
     ```bash
-    git clone https://github.com/yourusername/scoot-project.git
+    https://github.com/sam-sepiol1/scoot-project-becode.git
     ```
 2. Navigate to the project directory:
     ```bash
