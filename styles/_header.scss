@@ -44,6 +44,7 @@ $md-screen: 768px;
 
 	&-logo {
 		margin: auto;
+		
 		@include media-minwidth($md-screen) {
 			margin: 0;
 			margin-left: 32px;

@@ -4,11 +4,10 @@
 // *{
 //     outline: 1px green solid;
 // }
-// main {
-//     max-width: 1440px;
-//     width: 100%;
-//     margin-top: 34px;
-// }
+.steps, .infos {
+    max-width: 1440px;
+    margin: auto auto;
+}
 
 .hero-index {
     background: url(../assets/index/man-on-scooter.jpg);
@@ -35,6 +34,12 @@
 
 .steps {
     margin-top: 120px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+
+
     &-container {
         display: flex; 
         flex-direction: column;
@@ -42,6 +47,10 @@
         justify-content: center;
         gap: 30px;
         padding: 0 32px;
+        
+        @include media-minwidth($lg-screen){ 
+            width: 75%;
+        }
     }
 
     &-step {
@@ -51,6 +60,7 @@
         gap: 40px;
         width: 100%;
         text-align: center;
+  
 
         &-content {
             display: flex;
@@ -82,7 +92,7 @@
 }
 
 .infos {
-    margin: 120px 0;
+    margin: 120px auto;
     display: flex;
     flex-direction: column;
     gap: 120px;

@@ -14,7 +14,7 @@
 					<img src="../assets/scoot-logo.png" class="header-nav-bar-logo mobile" alt="" srcset="" />
 
 					<div class="header-nav-bar-desktop">
-						<img src="../assets/scoot-logo.png" class="header-nav-bar-logo desktop" alt="" srcset="" />
+						<a href="../index.html"><img src="../assets/scoot-logo.png" class="header-nav-bar-logo desktop" alt="" srcset="" /></a>
 						<div class="header-nav-bar-desktop-links">
 							<a class="header-nav-bar-desktop-links-link" href="../pages/about.html">About</a>
 							<a class="header-nav-bar-desktop-links-link" href="../pages/careers.html">Career</a>
@@ -25,6 +25,7 @@
 				</div>
 
 				<div id="header-sidepanel" class="header-sidepanel">
+					<a class="header-sidepanel-link" href="../index.html">Home</a>
 					<a class="header-sidepanel-link" href="../pages/about.html">About</a>
 					<a class="header-sidepanel-link" href="../pages/careers.html">Career</a>
 					<a class="header-sidepanel-link" href="../pages/locations.html">Locations</a>
@@ -91,17 +92,17 @@
 
 			<section class="faq">
 				<div class="faq-work">
-					<div class="faq-desktop">
+					<div class="faq-heading">
 						<h2 class="faq-title">How it works</h2>
 					</div>
 					
 					<div class="faq-content">
 						<div class="faq-content-item">
 							<div class="faq-content-item-head">
-								<button class="faq-toggle-button" onclick="toggleAnswer(this)">
+								<summary class="faq-toggle-button" onclick="toggleAnswer(this)">
 								<h3 class="faq-content-item-title">How do I download the app?</h3>
 									<img class="faq-arrow" src="../assets/about/faq-arrow.svg" alt="" srcset="">
-								</button>
+								</summary>
 							</div>
 							<div class="faq-content-item-answer faq-answer d-none">
 								<p class="faq-content-item-paragraph">
@@ -113,10 +114,10 @@
 					
 						<div class="faq-content-item">
 							<div class="faq-content-item-head">
-								<button class="faq-toggle-button" onclick="toggleAnswer(this)">
+								<summarry class="faq-toggle-button" onclick="toggleAnswer(this)">
 									<h3 class="faq-content-item-title">Can I find a nearby Scoots?</h3>
 									<img class="faq-arrow" src="../assets/about/faq-arrow.svg" alt="" srcset="">
-								</button>
+								</summarry>
 							</div>
 							<div class="faq-content-item-answer faq-answer d-none">
 								<p class="faq-content-item-paragraph">
@@ -127,10 +128,10 @@
 						
 						<div class="faq-content-item">
 							<div class="faq-content-item-head">
-								<button class="faq-toggle-button" onclick="toggleAnswer(this)">
+								<summary class="faq-toggle-button" onclick="toggleAnswer(this)">
 									<h3 class="faq-content-item-title">Do I need a license to ride?</h3>
 									<img class="faq-arrow" src="../assets/about/faq-arrow.svg" alt="" srcset="">
-								</button>
+								</summary>
 							</div>
 							<div class="faq-content-item-answer faq-answer d-none">
 								<p class="faq-content-item-paragraph">
@@ -138,16 +139,21 @@
 								</p>
 							</div>
 						</div>
-						<div class="faq-desktop">
-							<h2 class="faq-title"> Safety </h2>
-						</div>
+					</div>
+
+				</div>
+				<div class="faq-safety">
+					<div class="faq-heading">
+						<h2 class="faq-title">Safety</h2>
+					</div>
+					<div class="faq-content">						
 						
 						<div class="faq-content-item">
 							<div class="faq-content-item-head">
-								<button class="faq-toggle-button" onclick="toggleAnswer(this)">
+								<summary class="faq-toggle-button" onclick="toggleAnswer(this)">
 									<h3 class="faq-content-item-title">Should I wear a helmet?</h3>
 									<img class="faq-arrow" src="../assets/about/faq-arrow.svg" alt="" srcset="">
-								</button>
+								</summary>
 							</div>
 							<div class="faq-content-item-answer faq-answer d-none">
 								<p class="faq-content-item-paragraph">
@@ -158,10 +164,10 @@
 						
 						<div class="faq-content-item">
 							<div class="faq-content-item-head">
-								<button class="faq-toggle-button" onclick="toggleAnswer(this)">
+								<summary class="faq-toggle-button" onclick="toggleAnswer(this)">
 									<h3 class="faq-content-item-title">How about the rules & regulations?</h3>
 									<img class="faq-arrow" src="../assets/about/faq-arrow.svg" alt="" srcset="">
-								</button>
+								</summary>
 							</div>
 							<div class="faq-content-item-answer faq-answer d-none">
 								<p class="faq-content-item-paragraph">
@@ -172,10 +178,10 @@
 						
 						<div class="faq-content-item">
 							<div class="faq-content-item-head">
-								<button class="faq-toggle-button" onclick="toggleAnswer(this)">
+								<summary class="faq-toggle-button" onclick="toggleAnswer(this)">
 									<h3 class="faq-content-item-title">What if I damage my scoot?</h3>
 									<img class="faq-arrow" src="../assets/about/faq-arrow.svg" alt="" srcset="">
-								</button>
+								</summary>
 							</div>
 							<div class="faq-content-item-answer faq-answer d-none">
 								<p class="faq-content-item-paragraph">
@@ -183,8 +189,9 @@
 								</p>
 							</div>
 						</div>
-				</div>
+					</div>
 
+				</div>
 			</section>
 
 		</main>

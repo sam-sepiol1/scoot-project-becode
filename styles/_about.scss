@@ -2,14 +2,13 @@
 @use "typography" as *;
 @use "responsive" as *;
 
-// * { 
-// outline: 1px solid red; 
+// * {
+// outline: 1px solid red;
 // }
 
-main { 
-	overflow:hidden;
+main {
+	overflow: hidden;
 }
-
 
 .d-none {
 	display: none;
@@ -25,48 +24,6 @@ main {
 	background-position: center;
 }
 
-.hero{ 
-	position: relative;
-	// height: 100%;
-	
-}
-
-// .arrow-one::after{ 
-// 	content:'';
-// 	background-image: url('../assets/about/hero-arrow.svg');
-// 	background-repeat: no-repeat;
-// 	background-size: contain;
-// 	background-position:right;
-// 	display: block;
-// 	width: 100%;
-// 	height: 50%;
-// 	position: absolute;
-// 	z-index: 1;
-// 	top: -250px;
-// }
-
-
-
-.arrow-two { 
-	position: relative;
-}
-
-// .arrow-two::after{ 
-// 	content: url('../assets/about/hero-arrow.svg');
-// 	display: block;
-// 	width: 100%;
-// 	z-index: 1;
-// 	position: absolute;
-// 	top: 0px;
-// 	right: 50px;
-// 	transform: rotate(180deg);
-
-// 	@include media-minwidth($md-screen) {
-// 		top: 150px;
-// 		right: 100px;
-// 	}
-// }
-
 .faq {
 	color: $dark-navy;
 	display: flex;
@@ -74,15 +31,27 @@ main {
 	align-items: center;
 	justify-content: center;
 	gap: 64px;
-	margin: 50px;
-	@include media-minwidth($md-screen) {
-		&-work, &-safety {
-			display: flex;
-			width: 100%;
-		}
+	max-width: 75%;
+	margin: 120px auto 160px auto;
+
+	&-heading { 
+		width: 100%;
 	}
 
 
+	&-work,
+	&-safety {
+		display: flex;
+		flex-direction: column;
+		width: 100%;
+
+		@include media-minwidth($lg-screen) {
+			flex-direction: row;
+			justify-content: space-between;
+			width: 100%;
+		}
+
+	}
 
 	&-content-item-head {
 		display: flex;
@@ -139,7 +108,6 @@ main {
 		letter-spacing: -0.803571px;
 		color: $dark-navy;
 		padding: 50px 0;
-
 	}
 }
 

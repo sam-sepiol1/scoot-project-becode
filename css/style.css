@@ -417,6 +417,11 @@ p {
   color: #FCB72B;
 }
 
+.steps, .infos {
+  max-width: 1440px;
+  margin: auto auto;
+}
+
 .hero-index {
   background: url(../assets/index/man-on-scooter.jpg);
   background-repeat: no-repeat;
@@ -442,6 +447,10 @@ p {
 
 .steps {
   margin-top: 120px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
 }
 .steps-container {
   display: flex;
@@ -450,6 +459,11 @@ p {
   justify-content: center;
   gap: 30px;
   padding: 0 32px;
+}
+@media (min-width: 1040px) {
+  .steps-container {
+    width: 75%;
+  }
 }
 .steps-step {
   display: flex;
@@ -486,7 +500,7 @@ p {
 }
 
 .infos {
-  margin: 120px 0;
+  margin: 120px auto;
   display: flex;
   flex-direction: column;
   gap: 120px;
@@ -593,14 +607,6 @@ main {
   background-position: center;
 }
 
-.hero {
-  position: relative;
-}
-
-.arrow-two {
-  position: relative;
-}
-
 .faq {
   color: #495567;
   display: flex;
@@ -608,11 +614,21 @@ main {
   align-items: center;
   justify-content: center;
   gap: 64px;
-  margin: 50px;
+  max-width: 75%;
+  margin: 120px auto 160px auto;
 }
-@media (min-width: 768px) {
+.faq-heading {
+  width: 100%;
+}
+.faq-work, .faq-safety {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+@media (min-width: 1040px) {
   .faq-work, .faq-safety {
-    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
     width: 100%;
   }
 }
