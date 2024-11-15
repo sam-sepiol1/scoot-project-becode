@@ -6,27 +6,20 @@ Welcome to the Scoot Project! This project aims to improve our skills in HTML/CS
 
 The Scoot Project is based on a FIGMA file provided by the team. The project is a scooter rental app that allows users to locate and rent scooters across the city.
 
-## 🛠️ Installation
+## 🌐 Live Link
 
-To get started with the Scoot Project, follow these steps:
+Go to: https://sam-sepiol1.github.io/scoot-project-becode/ to see the live version of the project.
 
-1. Clone the repository:
-    ```bash
-    https://github.com/sam-sepiol1/scoot-project-becode.git
-    ```
-2. Navigate to the project directory:
-    ```bash
-    cd scoot-project
-    ```
-3. Install dependencies: (if SASS already installed, skip this step)
-    ```bash
-    npm install -g sass
-    ```
-4. Compile the SCSS file:
-    ```bash
-    sass style.scss style.css
-    ```
-5. Open index.html in your browser to view the project.
+
+## 🎯 Project Objectives
+- Develop a responsive web application using HTML and CSS.
+- Implement a user-friendly interface based on the provided FIGMA design.
+- Integrate interactive elements using JavaScript.
+- Optimize the application for performance and accessibility.
+- Utilize version control with Git for project management.
+- Document the development process and codebase effectively.
+- Deploy the application to a web server for public access.
+- Collaborate with team members to enhance project outcomes.
 
 ## 📂 Project Structure
 ```
