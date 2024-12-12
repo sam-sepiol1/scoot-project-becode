@@ -8,7 +8,7 @@ The Scoot Project is based on a FIGMA file provided by the team. The project is 
 
 ## 🌐 Live Link
 
-Go to: https://sam-sepiol1.github.io/scoot-project-becode/ to see the live version of the project.
+Go to: [https://sam-sepiol1.github.io/scoot-project/](https://sam-sepiol1.github.io/scoot_project/) to see the live version of the project.
 
 
 ## 🎯 Project Objectives
